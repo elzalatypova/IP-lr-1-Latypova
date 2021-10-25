@@ -24,7 +24,7 @@ if ($M > $N) {
 			}
 		 }
 } else {
-	for ($i=1; $k < floor(pow($N, 1/3)) ; $i++) { 
+	for ($i=1; $i < floor(pow($N, 1/3)) ; $i++) { 
 		if (pow($i, 3) > $N) {break;}
 		 for ($j=1; $j < floor(pow($N, 1/3)); $j++) {
 		  if (pow($j, 3) > $N) {break;}
