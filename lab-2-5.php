@@ -18,21 +18,19 @@
     echo "z = $z" . '<br>';
 
 echo  "Вариант №14" . '<br>';
- function f6($u, $t)
-    {
-        if ($u < (-2))
-            return $u * 2;
-        elseif ($u <= 2 && $u >= (-2))
-            return (sin(pow($u, 3)) + log(abs($t), 10));
-        elseif ($u > 2)
-            return sqrt(cos(pow($u, 2)) + (pow(sin(pow($t, 4)),4);}
-    }
-    $a = rand(1, 20);
-    $b = rand(1, 20);
-    $z = f6($a / $b, (pow($b, 8) - pow($a, 7)) / ($a * $b)) + f6((pow($a, 10) + pow($b,12)) / ($a * pow($b, 2) - $a), $b);
-    echo "a = $a" . '<br>';
-    echo "b = $b" . '<br>';
-    echo "z = $z" . '<br>';
+$a=1;
+$b=rand(1,10);
+function f($u, $t) {
+    if ( $u < (-2) )
+        return ($u * 2);
+    elseif ($u <= 2 && $u >= (-2))
+        return (sin(pow($u, 3)) + log(abs($t), 10));
+    elseif ($u > 2)
+        return sqrt(pow(cos($u),2)+pow(sin(pow($t,3)),4),4);
+}
+$Z=log(f($a,$b),10)+f(pow($a,2),$a+$b);
+echo "a=".$a." b=".$b."<br/>";
+echo "Z=".$Z;
 ?>
 
-?>
+
